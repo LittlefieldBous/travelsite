@@ -1,5 +1,6 @@
 /*CSS3 - Amy Bousamra*/
 
+
 * {
   box-sizing: border-box;
 }
@@ -44,7 +45,7 @@ h1, h2, h3 {
 }
 
 
-/* Three equal columns that sits next to each other */
+/* Three equal columns */
 .column {
   flex: 100%; 
   max-width: 33.33%; 
@@ -336,10 +337,7 @@ a {
 	border-radius: 0px;
 }
 
-
-/* ================================= 
-  Media Queries
-==================================== */
+/*media queries - note to self:check*/
 
 @media (max-width: 800px) {
   .column {
@@ -484,9 +482,9 @@ i.fa {
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
-/*animation slide left styled for testimonials*/
+/*animation slide left styled for blurbs*/
 
-.animation-element.slide-left.testimonial {
+.animation-element.slide-left.blurb {
   float: left;
   width: 47%;
   margin: 0% 1.5% 3% 1.5%;
@@ -495,79 +493,78 @@ i.fa {
 box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   border: solid 1px #EAEAEA;
 }
-.animation-element.slide-left.testimonial:hover,
-.animation-element.slide-left.testimonial:active{
+.animation-element.slide-left.blurb:hover,
+.animation-element.slide-left.blurb:active{
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
-.animation-element.slide-left.testimonial:nth-of-type(odd) {
+.animation-element.slide-left.blurb:nth-of-type(odd) {
   width: 48.5%;
   margin: 0% 1.5% 3.0% 0%;
 }
 
-.animation-element.slide-left.testimonial:nth-of-type(even) {
+.animation-element.slide-left.blurb:nth-of-type(even) {
   width: 48.5%;
   margin: 0% 0% 3.0% 1.5%;
 }
 
-.animation-element.slide-left.testimonial .header{
+.animation-element.slide-left.blurb .header{
   float: left;
   width: 100%;
   margin-bottom: 10px;
 }
-.animation-element.slide-left.testimonial .left{
+.animation-element.slide-left.blurb .left{
   float: left;
   margin-right: 15px;
 }
-.animation-element.slide-left.testimonial .right{
+.animation-element.slide-left.blurb .right{
   float: left;
 }
 
-.animation-element.slide-left.testimonial img {
+.animation-element.slide-left.blurb img {
   /*width: 65px;
   height: 65px;*/
   border-radius: 100%;
   box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5);
 }
 
-.animation-element.slide-left.testimonial h3 {
+.animation-element.slide-left.blurb h3 {
   margin: 0px 0px 5px 0px;
 }
 
-.animation-element.slide-left.testimonial h4 {
+.animation-element.slide-left.blurb h4 {
   margin: 0px 0px 5px 0px;
 }
 
-.animation-element.slide-left.testimonial .content {
+.animation-element.slide-left.blurb .content {
   float: left;
   width:100%;
   margin-bottom: 10px;
 }
 
-/*.animation-element.slide-left.testimonial .rating{}*/
 
-.animation-element.slide-left.testimonial i {
+.animation-element.slide-left.blurb i {
   color: #aaa;
   margin-right: 5px;
 }
 
 /*media queries for small devices*/
 @media screen and (max-width: 678px){
-  /*testimonials*/
-  .animation-element.slide-left.testimonial,
-  .animation-element.slide-left.testimonial:nth-of-type(odd),
-  .animation-element.slide-left.testimonial:nth-of-type(even){
+  /*blurbs*/
+  .animation-element.slide-left.blurb,
+  .animation-element.slide-left.blurb:nth-of-type(odd),
+  .animation-element.slide-left.blurb:nth-of-type(even){
     width: 100%;
     margin: 0px 0px 20px 0px;
   }
-  .animation-element.slide-left.testimonial .right,
-  .animation-element.slide-left.testimonial .left,
-  .animation-element.slide-left.testimonial .content,
-  .animation-element.slide-left.testimonial .rating{
+  .animation-element.slide-left.blurb .right,
+  .animation-element.slide-left.blurb .left,
+  .animation-element.slide-left.blurb .content,
+  .animation-element.slide-left.blurb .rating{
     text-align: center;
     float: none;
   }
-  .animation-element.slide-left.testimonial img{
+  .animation-element.slide-left.blurb img{
     width: 100%;
     height: 100%;
     margin-bottom: 5px;
