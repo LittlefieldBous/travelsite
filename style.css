@@ -1,4 +1,4 @@
-/*CSS3 - Amy Bousamra*/
+/*CSS3 By: Amy Littlefield Bousamra*/
 
 * {
   box-sizing: border-box;
@@ -337,9 +337,7 @@ a {
 }
 
 
-/* ================================= 
-  Media Queries
-==================================== */
+/* Media Queries*/
 
 @media (max-width: 800px) {
   .column {
