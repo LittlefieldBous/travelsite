@@ -14,8 +14,9 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100vh;
-
-  /*fade in on load*/
+  background: #f9f9f9;
+  font-size: 16px;
+  
 }
 
 section {
@@ -79,11 +80,6 @@ h1, h2, h3 {
   box-sizing: border-box;
 }
 
-body{
-  background: #f9f9f9;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-}
 
 .banner {
   padding: 0;
@@ -130,9 +126,9 @@ body{
   transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay{
+/*.content:hover .content-overlay{
   opacity: 1;
-}
+}*/
 
 .content-image{
   width: 100%;
@@ -172,7 +168,6 @@ body{
   font-size: 2em;
 }
 
-
 img {
   padding: 0 .3em .3em;
 }
@@ -195,8 +190,8 @@ img {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -215,6 +210,7 @@ img {
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+  text-align: center;
 }
 
 /*end of image overlay*/
@@ -269,6 +265,14 @@ h5.logo {
 	color: #718daa;
 }
 
+.main-nav a:hover {
+	color: #718daa;
+}
+
+.menu:first-child a:hover {
+  color: #718daa;
+}
+
 
 .header {
 	padding-top: .5em;
@@ -276,13 +280,69 @@ h5.logo {
 	background-color: #fff;
 }
 
-
-body {
-	font-family: 'Montserrat', sans-serif;
-	line-height: 1.6;
-	margin: 0;
-	min-height: 100vh;
+/*flex hamburger for mobile*/
+.menu {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 15vw;
+  font-weight: bold;
 }
+.menu:first-child {
+  /*display: inline-flex;*/
+  justify-content: left;
+  width: 30%;
+  /*margin-left: 0;
+  margin-right: auto;*/
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding:0 0.5em;
+}
+.menu:nth-child(n+2):hover {
+  background-color: #c0c0c0;
+  color: #000;
+  border-radius: 0.5em;
+}
+
+.mobile-menu {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  width: 1.2em;
+}
+.menu-icon {
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: inline-flex;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .flex {
+    flex-direction: row;
+  }
+  .menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    font-weight: bold;
+  }
+}
+
+/*end of flex hamburger style*/
+
+
 ul {
   margin: 0;
   padding: 0;
